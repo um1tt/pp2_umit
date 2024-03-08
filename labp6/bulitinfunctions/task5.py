@@ -1,0 +1,6 @@
+thistuple = ("a", "b")
+thistuple1 = ("a", False)
+thistuple2 = ("a", True)
+print(all(thistuple))
+print(all(thistuple1))
+print(all(thistuple2))
