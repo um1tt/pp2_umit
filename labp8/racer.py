@@ -75,7 +75,7 @@ class Coin(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.topleft = (random.randint(0, SCREEN_WIDTH - 25), 0)
         self.collected = False
-        self.speed = SPEED  
+        self.speed = SPEED - 1 
 
     def move(self):
         self.rect.move_ip(0, self.speed)
@@ -95,7 +95,6 @@ enemies.add(E1)
 all_sprites = pygame.sprite.Group()
 all_sprites.add(P1)
 all_sprites.add(E1)
-
 coins = pygame.sprite.Group()
 
 INC_SPEED = pygame.USEREVENT + 1
